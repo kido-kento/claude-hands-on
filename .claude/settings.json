@@ -1,0 +1,46 @@
+{
+  "model": "haiku",
+  "permissions": {
+    "allow": [],
+    "deny": [],
+    "ask": []
+  },
+  "env": {},
+  "hooks": {"Stop": [
+    {
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "afplay /System/Library/Sounds/Glass.aiff"
+        }
+      ]
+    }
+  ],
+  "Notification": [
+    {
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "afplay /System/Library/Sounds/Glass.aiff"
+        }
+      ]
+    }
+  ]
+},
+  "sandbox": true,
+  "mcpServers": {
+    "github": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "******************"
+      }
+    }
+  }
+}

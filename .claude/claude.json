@@ -1,0 +1,25 @@
+{
+  "model": "haiku",
+  "permissions": {
+    "allow": [],
+    "deny": [],
+    "ask": []
+  },
+  "env": {},
+  "hooks": {},
+  "sandbox": true,
+    "mcpServers": {
+      "github": {
+        "type": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-github"
+        ],
+        "env": {
+          "GITHUB_PERSONAL_ACCESS_TOKEN": "********************"
+        }
+    }
+  }
+}
+
